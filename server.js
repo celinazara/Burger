@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 
 //override with POST having DELETE method
 
-app.use(methodOverride(_'method'));
+app.use(methodOverride('_method'));
 var exphbs = require('express-handlebars');
 app.engine('handlebars' , exphbs({
     defaultLayout: 'main'
