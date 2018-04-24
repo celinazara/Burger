@@ -31,7 +31,7 @@ router.get('/menu'), function(req, res) {
     burger.getMenu(function(data) {
         res.render('menu', { itm: data });
     });
-});
+};
 
 router.post('/create', function(req, res) {
     burger.insertOne([req.body.burgerInput], function(){
